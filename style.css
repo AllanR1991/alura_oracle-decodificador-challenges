@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 .layout-grid{
     max-width: 1440px;
     width: 90%;
@@ -46,19 +48,29 @@ main{
     width: 60%;    
 }
 
-.secaoInput textarea{
+.caixaTextoInput{
     height: 80%;
     margin-top: 2em;
     border-radius: 30px;
     border-color: transparent;
-    background-color: lightgrey;
+    background: transparent;
     resize: none;
-    padding: 2em;
+    padding: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: calc((32/16)*1em);
+    color: #00008b;
 }
 
-.secaoInput-informativo::before{
-    content: url(./assets/images/exclamacao.png);
-    margin-right: .5em;
+.informativo{
+    display: flex;
+    align-items: center;
+}
+
+.informativoImg{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 .secaoInput-botoes{
@@ -69,6 +81,19 @@ main{
     width: 45%;
     height: 67px;
     border-radius: 24px;
+}
+
+.botaoCriptografar{
+    background: #00008b;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    border: none
+}
+
+.botaoDescriptografar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
 }
 
 aside{
