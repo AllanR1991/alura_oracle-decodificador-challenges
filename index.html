@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="layout-grid">
+            <img class=".header-logo" src="assets/images/logoAlura.svg" alt="Letra A sendo a logo da Alura.">
+        </div>
+    </header>
+    <main>
+        <div class="secaoPrincipal layout-grid flex">
+
+            <section class="secaoInput">
+                <textarea class="layout-grid-secaoIput" name="" id="" cols="30" rows="10" placeholder="Digite seu Texto"></textarea>
+                
+                <p class="secaoInput-informativo layout-grid-secaoIput">Apenas letras minúsculas e sem acento.</p>
+                
+                <div class="secaoInput-botoes layout-grid-secaoIput">
+                    <button class="criptografar">Criptografar</button>
+                    <button class="descriptografar">Descriptografar</button>
+                </div>
+            </section>
+            <aside>
+
+                <img src="assets/images/pessoaComLupa.svg"
+                    alt="Imagem de uma pessoa a centada sobre as pernas analizando um diamante com uma lupa.">
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        By Allan R. dos Santos
+    </footer>
+    <script>
+        function Criptografar() {
+            var caixaTexto = document.querySelector('textarea');
+            console.log(caixaTexto.value);
+        }
+
+        var botao = document.querySelector('.criptografar');
+
+        botao.onclick = Criptografar;
+    </script>
+</body>
+
+
+</html>

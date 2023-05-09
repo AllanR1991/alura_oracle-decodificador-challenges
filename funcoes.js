@@ -1,0 +1,1 @@
+cosnt textArea = document.querySelector('textarea')
