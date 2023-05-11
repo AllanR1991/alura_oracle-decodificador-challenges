@@ -26,6 +26,7 @@ header{
     width: 100vw;
     position:fixed;
     margin: 0 auto;
+    padding-top: 1em;
 }
 
 main{
