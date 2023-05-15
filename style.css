@@ -34,20 +34,21 @@ main{
 }
 
 .secaoPrincipal{
-    height: 95vh;
     padding: 1.5em 0 1em 0;
 }
 
 .secaoInput{
+    height: 859.65px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* align-items: center; */
-    width: 60%;    
+    width: 60%;
+    padding-bottom: 1em;
 }
 
 .secaoInput__caixaTextoInput{
-    height: 80%;
+    height: inherit;
     margin-top: 2em;
     border-radius: 30px;
     border-color: transparent;
@@ -91,6 +92,11 @@ main{
     width: 45%;
     height: 67px;
     border-radius: 24px;
+}
+
+.informativo{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .botoes__criptografar{
@@ -176,6 +182,7 @@ main{
     font-size: 1em;
     color: #0A3871;
     display: none;
+    flex-shrink: 0;
 }
 
 
@@ -183,7 +190,7 @@ footer{
     background-color: #00008b;
 
     display: flex;
-    height: 5vh;
+    height: 47.35px;
     align-items: center;
     justify-content: center;
 
@@ -196,37 +203,27 @@ footer{
 @media screen and (max-width:1439px) {
     .secaoPrincipal{
         flex-direction: column;
-        gap: 2em;
     }
 
     .secaoInput{
         width: 100%;
-        height: 85%;
     }
 
     .exibeMensagem{
         width: 100%;
-        height: 15%;
-    }
-
-    .exibeMensagem__caixaTexto{
-        height: 73%;
+        height: fit-content;
     }
 
     .exibeMensagem__img{
         display: none;
     }
-    .exibeMensagem__descricaoDestaque{
-        margin: 0px;
-    }
-
-    .exibeMensagem__botaoCopiar{
-        box-sizing: content-box;
-        height: 67px;
-    }
 }
 
 @media screen and (max-width:768px) {
+    .secaoInput{
+        height: 900px;
+    }
+
     .botoes{
         flex-direction: column;
         align-items: center;
@@ -236,4 +233,5 @@ footer{
     .botoes button{
         width: 100%;
     }
+
 }
