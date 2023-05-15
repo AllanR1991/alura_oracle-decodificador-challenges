@@ -20,34 +20,33 @@
         <div class="secaoPrincipal layout-grid flex">
 
             <section class="secaoInput">
-                <textarea class="caixaTextoInput layout-grid-secaoIput" name="" id="" cols="30" rows="10"
-                    placeholder="Digite seu Texto"></textarea>
+                <textarea class="secaoInput__caixaTextoInput layout-grid-secaoIput" placeholder="Digite seu Texto"></textarea>
 
                 <div class="informativo layout-grid-secaoIput">
-                    <img src="assets/images/exclamacao.png" alt="" class="informativoImg">
-                    <p class="informativo-descricao">Apenas letras minúsculas e sem acento.</p>
+                    <img src="assets/images/exclamacao.png" alt="Sinal de exclamacao representando, atenção." class="informativo__img">
+                    <p class="informativo__descricao">Apenas letras minúsculas e sem acento.</p>
                 </div>
 
-                <div class="secaoInput-botoes layout-grid-secaoIput">
-                    <button class="botaoCriptografar">Criptografar</button>
-                    <button class="botaoDescriptografar">Descriptografar</button>
+                <div class="botoes layout-grid-secaoIput">
+                    <button class="botoes__criptografar">Criptografar</button>
+                    <button class="botoes__descriptografar">Descriptografar</button>
                 </div>
             </section>
-            <aside class="mensagem">
+            <aside class="exibeMensagem">
 
-                <textarea class="mensagem-caixaTexto" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="exibeMensagem__caixaTexto" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
 
-                <img class="mensagem-img"src="assets/images/pessoaComLupa.svg"
+                <img class="exibeMensagem__img"src="assets/images/pessoaComLupa.svg"
                     alt="Imagem de uma pessoa a centada sobre as pernas analizando um diamante com uma lupa.">
-                <p class="mensagem-descricaoDestaque">Nenhuma mensagem encontrada</p>
-                <p class="mensagem-descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p class="exibeMensagem__descricaoDestaque">Nenhuma mensagem encontrada</p>
+                <p class="exibeMensagem__descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
 
-                <button class="mensagem-botaoCopiar">Copiar</button>
+                <button class="exibeMensagem__botaoCopiar">Copiar</button>
             </aside>
         </div>
     </main>
     <footer>
-        By Allan R. dos Santos
+        <p>By Allan R. dos Santos</p>
     </footer>
     <script src="funcoes.js">
     </script>

@@ -1,12 +1,16 @@
 function OcultaItensMensagem() {
-    document.querySelector('.mensagem-img').style.display = "none";
-    document.querySelector('.mensagem-descricaoDestaque').style.display = "none";
-    document.querySelector('.mensagem-descricao').style.display = "none";
+    document.querySelector('.exibeMensagem__img').style.display = "none";
+    document.querySelector('.exibeMensagem__descricaoDestaque').style.display = "none";
+    document.querySelector('.exibeMensagem__descricao').style.display = "none";
 }
 
 function ExibeMensagemBotao() {
-    document.querySelector('.mensagem-caixaTexto').style.display = "block";
-    document.querySelector('.mensagem-botaoCopiar').style.display = "block";
+    document.querySelector('.exibeMensagem__caixaTexto').style.display = "block";
+    document.querySelector('.exibeMensagem__botaoCopiar').style.display = "block";
+
+    if(window.matchMedia("screen and (max-width: 1440px)").matches){
+        document.querySelector(".exibeMensagem").style.height = "40%";
+    }
 }
 
 function Criptografar() {
@@ -87,20 +91,19 @@ function CopiaTexto() {
 
     // Copy the text inside the text field
     navigator.clipboard.writeText(areaTextoMensagem.value);
-    areaTextoMensagem.select(null);
     // Alert the copied text
     /* alert("Copied the text: " + areaTextoMensagem.value); */
-    areaTextoInput.focus();
+    areaTextoInput.select();
 }
 
-var areaTextoInput = document.querySelector('.caixaTextoInput');
+var areaTextoInput = document.querySelector('.secaoInput__caixaTextoInput');
 
-var areaTextoMensagem = document.querySelector('.mensagem-caixaTexto');
+var areaTextoMensagem = document.querySelector('.exibeMensagem__caixaTexto');
 var textoMensagem = areaTextoMensagem.value.toLowerCase();
 
-var botaoCrip = document.querySelector('.botaoCriptografar');
-var botaoDescrip = document.querySelector('.botaoDescriptografar')
-var botaoCopy = document.querySelector('.mensagem-botaoCopiar');
+var botaoCrip = document.querySelector('.botoes__criptografar');
+var botaoDescrip = document.querySelector('.botoes__descriptografar')
+var botaoCopy = document.querySelector('.exibeMensagem__botaoCopiar');
 
 var matrizCode = [
     ['e', 'enter'],
