@@ -31,6 +31,7 @@ header{
 
 main{
     display: flex;
+    height: 95vh;
 }
 
 .secaoPrincipal{
@@ -38,7 +39,8 @@ main{
 }
 
 .secaoInput{
-    height: 859.65px;
+    height: 100%;
+    /* height: 859.65px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,6 +148,7 @@ main{
 
 .exibeMensagem__img{
     width: 100%;
+    height: 100%;
     /* display: none; */
 }
 
@@ -190,7 +193,8 @@ footer{
     background-color: #00008b;
 
     display: flex;
-    height: 47.35px;
+    height: 5vh;
+    /* height: 47.35px; */
     align-items: center;
     justify-content: center;
 
@@ -201,12 +205,17 @@ footer{
 }
 
 @media screen and (max-width:1439px) {
+    main{
+        height: initial;
+    }
+
     .secaoPrincipal{
         flex-direction: column;
     }
 
     .secaoInput{
         width: 100%;
+        height: 690px;
     }
 
     .exibeMensagem{
@@ -217,13 +226,13 @@ footer{
     .exibeMensagem__img{
         display: none;
     }
+
+    footer{
+        height: 49px;
+    }
 }
 
 @media screen and (max-width:768px) {
-    .secaoInput{
-        height: 900px;
-    }
-
     .botoes{
         flex-direction: column;
         align-items: center;
