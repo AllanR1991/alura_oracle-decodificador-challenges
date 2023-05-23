@@ -12,7 +12,7 @@ Este projeto se iniciou através do challenge da alura + oracle  com o projeto O
 Para a realização do projeto foram passados a nós participantes um protótipo no figma de como seria o projeto, juntamente recebemos acesso ao trello com um modelo kanban que facilitou a identificação dos processos a serem realizados durante todo o processo o qual me ajudou muito.
 Fiquei feliz com o projeto e como em pouco tempo pude fazer algo tão legal kkk....
 
-https://github.com/AllanR1991/decodificador-alura-challenges-oracle-one/assets/22855740/5af920a3-8d7e-4533-a8b0-48409e87e0e8
+https://github.com/AllanR1991/decodificador-alura-challenges-oracle-one/assets/22855740/d3dc0f7e-81b5-46f4-a925-304b87ff1472
 
 ### Neste projeto foram utilizados:
 - Flex Box;
