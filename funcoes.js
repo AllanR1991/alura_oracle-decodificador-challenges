@@ -8,7 +8,7 @@ function ExibeMensagemBotao() {
     document.querySelector('.exibeMensagem__caixaTexto').style.display = "block";
     document.querySelector('.exibeMensagem__botaoCopiar').style.display = "block";
     
-    if(window.matchMedia("screen and (max-width: 1440px)").matches){
+    if(window.matchMedia("screen and (max-width: 1439px)").matches){
     areaTextoMensagem.style.height = "300px";
     }else{
         areaTextoMensagem.style.height = "inherit";

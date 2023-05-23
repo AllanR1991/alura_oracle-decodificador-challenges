@@ -94,6 +94,13 @@ main{
     width: 45%;
     height: 67px;
     border-radius: 24px;
+    transition: all 0.3s;
+}
+
+.botoes button:hover{
+    border: 3px solid black;
+    transform: scale(130%);
+    cursor: pointer;
 }
 
 .informativo{
@@ -186,6 +193,13 @@ main{
     color: #0A3871;
     display: none;
     flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+.exibeMensagem__botaoCopiar:hover{
+    border: 3px solid black;
+    transform: scaley(130%);
+    cursor: pointer;
 }
 
 
@@ -205,6 +219,10 @@ footer{
 }
 
 @media screen and (max-width:1439px) {
+    header{
+        position: absolute;
+    }
+    
     main{
         height: initial;
     }
